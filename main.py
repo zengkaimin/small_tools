@@ -19,6 +19,7 @@ app = FastAPI()
 def read_item(item_id: int, q: Optional[str] = None):
     print("hahha")
     #test
+    print (item_id)
     return {"item_id": item_id, "q": q}
 
 @app.post("/inoreader/starred")
