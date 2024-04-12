@@ -13,6 +13,7 @@ app = FastAPI()
 # @app.get("/")
 # def read_root():
 #     return {"test"}
+#test
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
@@ -20,4 +21,5 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.post("/inoreader/starred")
 def rsync_inoreader_starred(item:Item):
+    print('zengkaimin')
     return {"test"}
